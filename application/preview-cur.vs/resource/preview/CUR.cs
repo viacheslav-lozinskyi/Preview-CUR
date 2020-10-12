@@ -22,7 +22,9 @@ namespace resource.preview
                         }
                         for (var i = 0; i < a_Size; i++)
                         {
-                            __Send(context, NAME.PATTERN.PREVIEW, 1, "", "");
+                            context.
+                                SetState(NAME.STATE.PICTURE).
+                                Send(NAME.PATTERN.PREVIEW, 1, "");
                         }
                     }
                     {
