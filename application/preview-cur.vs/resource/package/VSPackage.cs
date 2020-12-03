@@ -21,14 +21,14 @@ namespace resource.package
             public const string EXTENSION = ".CUR";
             public const string GUID = "7657CB66-2C1D-49A4-A34B-A4E259B5FD7E";
             public const string NAME = "Preview-CUR";
-            public const string VERSION = "1.0.2";
+            public const string VERSION = "1.0.3";
         }
 
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
             {
                 cartridge.AnyPreview.Connect();
-                cartridge.AnyPreview.Register(cartridge.AnyPreview.MODE.PREVIEW, CONSTANT.EXTENSION, new preview.CUR());
+                cartridge.AnyPreview.Register(cartridge.AnyPreview.MODE.PREVIEW, CONSTANT.EXTENSION, new resource.preview.Native());
             }
             {
                 await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
