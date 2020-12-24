@@ -21,7 +21,7 @@ namespace resource.package
             public const string EXTENSION = ".CUR";
             public const string GUID = "7657CB66-2C1D-49A4-A34B-A4E259B5FD7E";
             public const string NAME = "Preview-CUR";
-            public const string VERSION = "1.0.3";
+            public const string VERSION = "1.0.4";
         }
 
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
